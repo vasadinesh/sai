@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        text-align: center;
+        background-color: rgb(222, 250, 132);
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+     h2{
+        text-align: center;
+     }
+     label{
+        display: block;
+       
+     }
+     input[type=text],
+     input[type=tel],
+     input[type=color],
+     input[type=file],
+     input[type=password],
+     input[type=email],
+     input[type=url],
+     input[type=date],
+     input[type=datetime-local],
+     input[type=week],
+     input[type=month],
+     input[type=file],
+     textarea,select{
+        border-radius: 10px;
+     }
+     input[type=submit]{
+background-color: rgb(0, 231, 89);
+cursor: pointer
+background-color: rgb(0, 231, 89);
+cursor: pointer;
+     }
+     input[type=submit]:hover{
+        background-color: brown;
+     }
+
+     
+
+    </style>
+<body>
+    <h2>Registration Form For  Students</h2>
+    <form action="https://formspree.io/f/mdorvwpr" method="post">
+        <label>Name</label>
+        <input type="text" name="name" required>
+        <label>Email</label>
+        <input type="email" email="email" required>
+        <label>Enter Password</label>
+        <input type="password" name="pass" required>
+        <label>Phone Number</label>
+        <input type="tel" phoneNumber="phoneNumber" required>
+         <label><b>Graduation</label></b>
+        <input type="radio" name="grad" >Engineering<br>
+        <input type="radio"  name="grad">others<br>
+        <label>upload Resume Link</label>
+        <input type="url" >
+        <label>gender</label>
+        <select>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+        <label>Favorite color:</label>
+        <input type="color" name="fav color">
+        <label>Date Of Birth:</label>
+        <input type="date" name="Birth">
+        <label>Choose Current Date</label>
+        <input type="datetime-local" name="CD">
+        <label>Enter Week</label>
+        <input type="week" name="week">
+        <label>Choose Month</label>
+        <input type="month">
+        <label>Upload a File</label>
+        <input type="file" >
+        <label>Volume range</label>
+        <input type="range" >
+        <label>Search Bar</label>
+        <input type="search" >
+        <label>Fav Languages:</label>
+        <input type="checkbox" name="fav language" value="PYTHON">PYTHON<br>
+        <input type="checkbox" name="fav language" value="C++">C++<br>
+        <input type="checkbox" name="fav language" value="JAVA">JAVA<br>
+        <input type="checkbox" name="fav language" value="C">C<br>
+        <label>Zipcode</label>
+        <input type="text" zipcode="zipcode" required>
+        <label>About</label>
+        <textarea name="about"></textarea>
+        <label>Upload Your Image</label>
+        <input type="image" src="image.jpg" >
+        <label>Enter Submission Time</label>
+        <input type="time" >
+        <label>Submit</label>
+        <input type="submit" value="register">      <input type="reset" value="Reset"
+    </form>
+</body>
+</html>
